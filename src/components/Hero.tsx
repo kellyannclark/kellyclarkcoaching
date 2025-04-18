@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="w-full pt-0 pb-10">
       <Image
-        src="/hero-image.svg"
+        src="/hero-image.png"
         alt="Hero image"
         width={1600}
         height={600}
