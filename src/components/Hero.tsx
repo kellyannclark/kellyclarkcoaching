@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full flex justify-center py-10">
+    <div className="w-full pt-0 pb-10">
       <Image
         src="/hero-image.svg"
         alt="Hero image"
-        width={800}
-        height={400}
+        width={1600}
+        height={600}
+        className="w-full h-auto"
         priority
       />
     </div>
