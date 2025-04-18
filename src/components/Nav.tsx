@@ -10,7 +10,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between relative">
         {/* Desktop Nav Centered */}
         <ul className="hidden sm:flex gap-4 sm:gap-6 text-[10px] sm:text-xs md:text-sm font-condensed font-bold uppercase absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-        <li><Link href="#story">Kelly&apos;s Story</Link></li>
+        <li><Link href="#story">Kelly's Story</Link></li>
         <li><Link href="#consult">Free Consult</Link></li>
         <li><Link href="#services">Services</Link></li>
         <li><Link href="#contact">Contact</Link></li>
