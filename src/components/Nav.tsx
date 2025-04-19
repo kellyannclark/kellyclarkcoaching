@@ -10,13 +10,32 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between relative">
         {/* Desktop Nav Centered */}
         <ul className="hidden sm:flex gap-4 sm:gap-6 text-[10px] sm:text-xs md:text-sm font-condensed font-bold uppercase absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-        <li><Link href="#story">Kelly&apos;s Story</Link></li>
-        <li><Link href="#consult">Free Consult</Link></li>
-        <li><Link href="#services">Services</Link></li>
-        <li><Link href="#contact">Contact</Link></li>
-      </ul>
-
-
+          <li>
+            <Link href="#story" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+              Free Consult
+            </Link>
+          </li>
+          <li>
+            <Link href="#consult" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+            Services
+            </Link>
+          </li>
+          <li>
+            <Link href="#media" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+              Media
+            </Link>
+          </li>
+          <li>
+            <Link href="#book" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+              Book
+            </Link>
+          </li>         
+          <li>
+            <Link href="#services" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+            Kelly&apos;s Story
+            </Link>
+          </li>
+        </ul>
 
         {/* Hamburger Icon aligned right */}
         <button
@@ -32,19 +51,9 @@ export default function Nav() {
             xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
@@ -52,11 +61,12 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="sm:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium">
+        <ul className="sm:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium uppercase">
+          <li><Link href="#story" onClick={() => setIsOpen(false)}>Kelly&apos;s Story</Link></li>
           <li><Link href="#consult" onClick={() => setIsOpen(false)}>Free Consult</Link></li>
-          <li><Link href="#story" onClick={() => setIsOpen(false)}>Kelly's Story</Link></li>
           <li><Link href="#services" onClick={() => setIsOpen(false)}>Services</Link></li>
-          <li><Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link href="#media" onClick={() => setIsOpen(false)}>Media</Link></li>
+          <li><Link href="#book" onClick={() => setIsOpen(false)}>Book</Link></li>
         </ul>
       )}
     </nav>
