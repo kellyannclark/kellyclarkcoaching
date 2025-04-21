@@ -24,8 +24,10 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-gray-800: #ededed; /* Make gray-800 light in dark mode */
   }
 }
+
 
 body {
   background-color: white;
@@ -39,6 +41,10 @@ p {
 body {
   color: var(--color-gray-800); /* or just black */
 }
+p {
+  color: var(--color-gray-800) !important;
+}
+
 
 
 
