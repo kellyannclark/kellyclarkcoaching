@@ -25,17 +25,19 @@ export default function KellysStory() {
           <p>
             But after hitting rock bottom, something within me shifted. In the depths of my despair, I finally turned to my loving and merciful Creator—a Higher Power I didn’t trust or even believe in before. Over the past decade, God has lovingly restored my soul.
           </p>
-          <p>
-            Addiction was my Goliath. And I could not have overcome it on my own.
-          </p>
-          <p>
-            Along this journey, I discovered that change doesn't happen by accident. It comes through connection, using recovery tools, acts of faith, and intentional access to the power that makes true transformation possible. I've learned tools that helped me reconnect with my Higher Power—and I've created others that have become pillars of my daily recovery.
-          </p>
+
         </div>
       </div>
 
       {/* Full Width Section BELOW the image */}
       <div className="mt-10 text-left text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
+      <p>
+            Addiction was my Goliath. And I could not have overcome it on my own.
+          </p>
+          <p>
+            Along this journey, I discovered that change doesn't happen by accident. It comes through connection, using recovery tools, acts of faith, and intentional access to the power that makes true transformation possible. I've learned tools that helped me reconnect with my Higher Power—and I've created others that have become pillars of my daily recovery.
+          </p>
+      
         <p>
           These tools include spiritual practices, mindset shifts, daily accountability, and moments of surrender—small, consistent acts of faith that open the door to miracles. I now live to share these tools with others, to walk alongside them as they discover that same power for themselves.
         </p>

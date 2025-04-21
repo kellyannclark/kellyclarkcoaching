@@ -81,14 +81,44 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="sm:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium uppercase">
-          <li><Link href="#story" onClick={() => setIsOpen(false)}>Kelly&apos;s Story</Link></li>
-          <li><Link href="#consult" onClick={() => setIsOpen(false)}>Free Consult</Link></li>
-          <li><Link href="#services" onClick={() => setIsOpen(false)}>Services</Link></li>
-          <li><Link href="#media" onClick={() => setIsOpen(false)}>Media</Link></li>
-          <li><Link href="#book" onClick={() => setIsOpen(false)}>Book</Link></li>
-        </ul>
-      )}
+  <ul className="sm:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium uppercase">
+    <li>
+      <Link href="#story" onClick={() => setIsOpen(false)}>
+        Kelly&apos;s Story
+      </Link>
+    </li>
+    <li>
+      <Link href="#consult" onClick={() => setIsOpen(false)}>
+        Free Consult
+      </Link>
+    </li>
+    <li>
+      <Link href="#services" onClick={() => setIsOpen(false)}>
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link href="#media" onClick={() => setIsOpen(false)}>
+        Media
+      </Link>
+    </li>
+    <li>
+      <Link href="#book" onClick={() => setIsOpen(false)}>
+        Book
+      </Link>
+    </li>
+    <li>
+      <Link
+        href="/contact"
+        onClick={() => setIsOpen(false)}
+        className="bg-white text-black px-4 py-2 rounded font-bold shadow hover:bg-gray-200 transition"
+      >
+        Contact Me
+      </Link>
+    </li>
+  </ul>
+)}
+
     </nav>
   );
 }
