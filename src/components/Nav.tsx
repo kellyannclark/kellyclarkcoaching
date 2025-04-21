@@ -11,14 +11,24 @@ export default function Nav() {
         {/* Desktop Nav Centered */}
         <ul className="hidden sm:flex gap-4 sm:gap-6 text-[10px] sm:text-xs md:text-sm font-condensed font-bold uppercase absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           <li>
-            <Link href="#story" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+          <a
+              href="https://calendly.com/event_types/user/me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+            >
               Free Consult
-            </Link>
+            </a>
+
           </li>
           <li>
-            <Link href="#consult" className="text-white hover:text-kelly transition duration-200 ease-in-out">
-            Services
-            </Link>
+          <Link
+          href="#consult"
+          className="text-white hover:text-kelly transition duration-200 ease-in-out"
+        >
+          Services
+        </Link>
+
           </li>
           <li>
             <Link href="#media" className="text-white hover:text-kelly transition duration-200 ease-in-out">
@@ -31,11 +41,21 @@ export default function Nav() {
             </Link>
           </li>         
           <li>
-            <Link href="#services" className="text-white hover:text-kelly transition duration-200 ease-in-out">
-            Kelly&apos;s Story
-            </Link>
+          <Link href="#story" className="text-white hover:text-kelly transition duration-200 ease-in-out">
+      Kelly&apos;s Story
+    </Link>
+  
           </li>
         </ul>
+                {/* Contact Me Button (Right side) */}
+                <div className="hidden sm:block ml-auto">
+          <Link
+            href="/contact"
+            className="bg-white text-black px-4 py-2 rounded font-semibold text-xs sm:text-sm uppercase hover:bg-gray-200 transition"
+          >
+            Contact Me
+          </Link>
+        </div>
 
         {/* Hamburger Icon aligned right */}
         <button
