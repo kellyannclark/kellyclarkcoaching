@@ -3,15 +3,15 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-
-
-
+/* Light mode (default) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --kelly: #4CBB17;
+  --color-gray-800: #171717; /* Set dark gray for light mode */
 }
 
+/* Custom Theme Variables (optional Tailwind plugin support) */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -20,32 +20,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --color-gray-800: #ededed; /* Make gray-800 light in dark mode */
+    --color-gray-800: #ededed; /* Override gray-800 to be readable in dark mode */
   }
 }
 
-
+/* Base styles */
 body {
-  background-color: white;
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  
 }
+
+/* Ensure paragraphs are readable */
 p {
   position: relative;
   z-index: 10;
+  color: var(--foreground); /* Use adaptive text color */
 }
-body {
-  color: var(--color-gray-800); /* or just black */
-}
-p {
-  color: var(--color-gray-800) !important;
-}
-
-
-
-
-
