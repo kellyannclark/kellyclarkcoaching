@@ -13,10 +13,12 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className="bg-white">
-
-        <Hero />
+      <main>
+      <Hero />
+      <section className="bg-white py-10">
         <Intro />
+      </section>
+
 
         {/* Top Image – full width within a max container */}
         <div className="w-full px-4 mt-2 sm:mt-3 md:mt-6 flex justify-center mb-10">
@@ -32,30 +34,33 @@ export default function Home() {
         </div>
 
         {/* Kelly's Story Section with background */}
-        <div className="w-full bg-[#eef1f1] py-6">
-          <div className="w-full px-4 mt-3 flex justify-center">
-            <Image
-              src="/header1.png"
-              alt="Header below message"
-              width={250}
-              height={200}
-              className="w-auto h-auto"
-            />
-          </div>
-
-          <div className="mt-1">
-            <KellysStory />
-          </div>
-
-          <div className="w-full px-4 mt-4 flex justify-center">
-            <div className="w-full max-w-[600px]">
+        <div className="relative w-full py-6">
+          <div className="absolute inset-0 bg-[#eef1f1] z-0"></div>
+          <div className="relative z-10">
+            <div className="w-full px-4 mt-3 flex justify-center">
               <Image
-                src="/message2.png"
-                alt="Second message below hero"
-                width={900}
-                height={400}
-                className="w-full h-auto"
+                src="/header1.png"
+                alt="Header below message"
+                width={250}
+                height={200}
+                className="w-auto h-auto"
               />
+            </div>
+
+            <div className="mt-1">
+              <KellysStory />
+            </div>
+
+            <div className="w-full px-4 mt-4 flex justify-center">
+              <div className="w-full max-w-[600px]">
+                <Image
+                  src="/message2.png"
+                  alt="Second message below hero"
+                  width={900}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -73,38 +78,40 @@ export default function Home() {
           </div>
 
           <div className="max-w-6xl mx-auto px-4 sm:px-8">
-  <Coaching />
-</div>
-
-      {/* Centered message3.png image */}
-      <div className="w-full px-4 mt-6 flex justify-center">
-        <div className="w-full max-w-[600px]">
-          <Image
-            src="/message3.png"
-            alt="Message below coaching"
-            width={900}
-            height={400}
-            className="w-full h-auto"
-          />
-        </div>
-      </div>
-      </div>
-
-
-        {/* Media Carousel Section with eef1f1 background */}
-        <div className="w-full bg-[#eef1f1] py-6">
-          <div className="w-full px-4 mt-3 flex justify-center">
-            <Image
-              src="/header3.png"
-              alt="Header below Recovery Coaching"
-              width={250}
-              height={200}
-              className="w-auto h-auto"
-            />
+            <Coaching />
           </div>
 
-          <div className="mt-6">
-            <Carousel />
+          {/* Centered message3.png image */}
+          <div className="w-full px-4 mt-6 flex justify-center">
+            <div className="w-full max-w-[600px]">
+              <Image
+                src="/message3.png"
+                alt="Message below coaching"
+                width={900}
+                height={400}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Media Carousel Section with eef1f1 background */}
+        <div className="relative w-full py-6">
+          <div className="absolute inset-0 bg-[#eef1f1] z-0"></div>
+          <div className="relative z-10">
+            <div className="w-full px-4 mt-3 flex justify-center">
+              <Image
+                src="/header3.png"
+                alt="Header below Recovery Coaching"
+                width={250}
+                height={200}
+                className="w-auto h-auto"
+              />
+            </div>
+
+            <div className="mt-6">
+              <Carousel />
+            </div>
           </div>
         </div>
 
