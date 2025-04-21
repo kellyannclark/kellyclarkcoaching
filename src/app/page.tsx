@@ -14,10 +14,13 @@ export default function Home() {
     <>
       <Nav />
       <main>
-      <Hero />
-      <section className="bg-white py-10">
-        <Intro />
-      </section>
+  <div className="relative z-0">
+    <Hero />
+  </div>
+  <section className="relative z-10 bg-white py-10">
+    <Intro />
+  </section>
+
 
 
         {/* Top Image – full width within a max container */}
