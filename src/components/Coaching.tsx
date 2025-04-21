@@ -21,7 +21,9 @@ export default function Coaching() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">What is Recovery Coaching?</h2>
+          <h2 style={{ fontFamily: "'Alike', serif" }} className="text-2xl font-semibold">
+            What is Recovery Coaching?
+          </h2>
           <p>
             Recovery Coaching helps you move forward with clarity, support, and accountability. Your coach is not your sponsor or therapist—we work in partnership with you to set practical, powerful goals for your recovery and life.
           </p>
@@ -31,14 +33,18 @@ export default function Coaching() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">Who Is This For?</h2>
+          <h2 style={{ fontFamily: "'Alike', serif" }} className="text-2xl font-semibold">
+            Who Is This For?
+          </h2>
           <p>
             Whether you’re sober curious, actively using, newly sober, or walking through a relapse—we meet you where you are. We work with individuals, couples, and families looking to create healthier, more connected lives.
           </p>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">Create Your Recovery Roadmap</h2>
+          <h2 style={{ fontFamily: "'Alike', serif" }} className="text-2xl font-semibold">
+            Create Your Recovery Roadmap
+          </h2>
           <p>
             We know how scary it is to admit there’s a problem. But the path forward becomes clearer with the right guide.
           </p>

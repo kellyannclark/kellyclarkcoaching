@@ -29,20 +29,32 @@ export default function Home() {
         <Image
           src="/header1.png"
           alt="Header below message"
-          width={350}
-          height={300}
+          width={250}
+          height={200}
           className="w-auto h-auto"
         />
       </div>
         <div className="mt-1">
           <KellysStory />
         </div>
+                {/* Second Image – same size and style as message1.png */}
+                <div className="w-full px-4 mt-4 flex justify-center mb-10">
+          <div className="w-full max-w-[600px]">
+            <Image
+              src="/message2.png"
+              alt="Second message below hero"
+              width={900}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
         <div className="w-full px-4 mt-3 flex justify-center">
       <Image
         src="/header2.png"
         alt="Header below Kelly's Story"
-        width={350}
-        height={300}
+        width={250}
+        height={200}
         className="w-auto h-auto"
       />
     </div>
