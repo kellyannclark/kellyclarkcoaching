@@ -14,14 +14,13 @@ export default function Home() {
     <>
       <Nav />
       <main>
-  <div className="relative z-0">
-    <Hero />
-  </div>
-  <section className="relative z-10 bg-white py-10">
-    <Intro />
-  </section>
+        <div className="relative z-0">
+          <Hero />
+        </div>
 
-
+        <section className="relative z-10 py-10">
+          <Intro />
+        </section>
 
         {/* Top Image – full width within a max container */}
         <div className="w-full px-4 mt-2 sm:mt-3 md:mt-6 flex justify-center mb-10">
@@ -36,9 +35,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Kelly's Story Section with background */}
+        {/* Kelly's Story Section */}
         <div className="relative w-full py-6">
-          <div className="absolute inset-0 bg-[#eef1f1] z-0"></div>
           <div className="relative z-10">
             <div className="w-full px-4 mt-3 flex justify-center">
               <Image
@@ -68,8 +66,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Coaching Section in white background */}
-        <div className="w-full bg-white py-6">
+        {/* Coaching Section */}
+        <div className="w-full py-6">
           <div className="w-full px-4 mt-3 flex justify-center">
             <Image
               src="/header2.png"
@@ -98,9 +96,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Media Carousel Section with eef1f1 background */}
+        {/* Media Carousel Section */}
         <div className="relative w-full py-6">
-          <div className="absolute inset-0 bg-[#eef1f1] z-0"></div>
           <div className="relative z-10">
             <div className="w-full px-4 mt-3 flex justify-center">
               <Image
@@ -118,8 +115,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Book Section in white background */}
-        <div className="w-full bg-white py-6">
+        {/* Book Section */}
+        <div className="w-full py-6">
           <div className="w-full px-4 mt-10 flex justify-center">
             <Image
               src="/header4.png"
