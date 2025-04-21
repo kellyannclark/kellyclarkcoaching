@@ -36,6 +36,10 @@ p {
   position: relative;
   z-index: 10;
 }
+body {
+  color: var(--color-gray-800); /* or just black */
+}
+
 
 
 
