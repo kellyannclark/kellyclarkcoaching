@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function KellysStory() {
   return (
-    <section id="story" className="bg-[#eef1f1] px-4 sm:px-8 py-12 max-w-6xl mx-auto">
+    <section id="story" className="relative bg-[#eef1f1] px-4 sm:px-8 py-12 max-w-6xl mx-auto">
       {/* Flex Row: Image + Main Text */}
       <div className="flex flex-col md:flex-row items-start md:gap-8">
         {/* Image */}
