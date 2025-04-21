@@ -17,7 +17,7 @@ const videos = [
 const ArrowLeft = ({ currentSlide, slideCount, ...props }: any) => (
   <button
     {...props}
-    className="absolute left-[-30px] top-1/2 z-10 transform -translate-y-1/2 bg-white border border-gray-300 text-black p-2 rounded-full shadow hover:bg-gray-100"
+    className="absolute left-[-30px] top-1/2 z-10 transform -translate-y-1/2 border border-gray-300 text-black p-2 rounded-full shadow"
   >
     <FaChevronLeft />
   </button>
@@ -26,7 +26,7 @@ const ArrowLeft = ({ currentSlide, slideCount, ...props }: any) => (
 const ArrowRight = ({ currentSlide, slideCount, ...props }: any) => (
   <button
     {...props}
-    className="absolute right-[-30px] top-1/2 z-10 transform -translate-y-1/2 bg-white border border-gray-300 text-black p-2 rounded-full shadow hover:bg-gray-100"
+    className="absolute right-[-30px] top-1/2 z-10 transform -translate-y-1/2 border border-gray-300 text-black p-2 rounded-full shadow"
   >
     <FaChevronRight />
   </button>
@@ -88,7 +88,7 @@ const Carousel = () => {
       )}
 
       {/* 🎧 Featured Interview */}
-      <div className="mt-10 bg-white rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
+      <div className="mt-10 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
         <img
           src="/leadingsaints.png"
           alt="Leading Saints Logo"
@@ -107,7 +107,7 @@ const Carousel = () => {
             href="https://leadingsaints.org/addiction-was-my-vehicle-to-the-savior-an-interview-with-kelly-clark-and-heather-warren/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#6d9ebd] text-black font-semibold px-5 py-2 rounded hover:bg-[#c78568] transition"
+            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
           >
             Listen on Leading Saints →
           </a>
@@ -115,7 +115,7 @@ const Carousel = () => {
       </div>
 
       {/* 📺 BYUtv Segment */}
-      <div className="mt-6 bg-white rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
+      <div className="mt-6 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
         <img src="/byutv.png" alt="BYUtv Logo" className="h-12 w-auto" />
         <div>
           <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
@@ -129,7 +129,7 @@ const Carousel = () => {
             href="https://www.byutv.org/8022092d-52e4-4958-993b-116981f6448c?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Extra"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#6d9ebd] text-black font-semibold px-5 py-2 rounded hover:bg-[#c78568] transition"
+            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
           >
             Watch on BYUtv →
           </a>

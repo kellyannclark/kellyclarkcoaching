@@ -40,7 +40,7 @@ const Book = () => {
             Christ can heal in the most unlikely of places.
           </p>
 
-          <blockquote className="italic border-l-4 border-[#d79877] pl-4 text-gray-600 dark:text-gray-400">
+          <blockquote className="italic border-l-4 border-gray-400 pl-4 text-gray-600 dark:text-gray-400">
             “I used to believe I was uniquely broken — beyond repair, beyond
             redemption. But I’ve come to know a Savior who specializes in
             impossible stories.”
@@ -51,7 +51,7 @@ const Book = () => {
               href="https://www.amazon.com/Between-Monsters-Mercy-Inspiring-Story/dp/1462136966/ref=sr_1_1?crid=1UAPRC0URZRVN&dib=eyJ2IjoiMSJ9.hXzfE2pp236_PpYFhq3UYt_dYuqqs5bcqXEH_f4xXJy6fUrInxlefOwLkoxEhOq4wJhBjFzGjlttFOU0kvp3YJROU8qMetJKy-jhAHyy56nbva6D2WFZlo7yiGnM_qV-fZok86AfpqwHGGd1Ug3lsvyFFuukQsM7pYn4851sabs.5s0QDoJZxpHwDDr9O6gTL77FyVmW47rhA9v11U3tAVg&dib_tag=se&keywords=between+monsters+and+mercy&qid=1745270883&sprefix=between+monsters+and+mercy%2Caps%2C154&sr=8-1"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#FF9900] text-white font-semibold px-5 py-2 rounded hover:bg-[#e68a00] transition"
+              className="text-black font-semibold px-5 py-2 rounded underline transition"
             >
               Buy on Amazon
             </a>
@@ -59,7 +59,7 @@ const Book = () => {
               href="https://www.cedarfort.com/products/between-monsters-and-mercy?srsltid=AfmBOoqJVwM5l_-zzJ-rO_NuZ5wpQVz4JcTWH4ETxgXnGqdTcK59-e9_"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#6c757d] text-white font-semibold px-5 py-2 rounded hover:bg-[#5a6268] transition"
+              className="text-black font-semibold px-5 py-2 rounded underline transition"
             >
               Cedar Fort Publishing
             </a>
@@ -67,7 +67,7 @@ const Book = () => {
               href="https://www.audible.com/pd/Between-Monsters-and-Mercy-Audiobook/B08FRKS1Q9"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#00A9E0] text-white font-semibold px-5 py-2 rounded hover:bg-[#008ec0] transition"
+              className="text-black font-semibold px-5 py-2 rounded underline transition"
             >
               Listen on Audible
             </a>
