@@ -9,8 +9,10 @@ export default function Hero() {
         width={1600}
         height={1100}
         className="w-full h-auto"
+        sizes="(max-width: 768px) 100vw, 1600px"
         priority
       />
+
     </div>
   );
 }
