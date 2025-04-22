@@ -8,6 +8,21 @@ import Coaching from "@/components/Coaching";
 import Intro from "@/components/Intro";
 import Carousel from "@/components/Carousel";
 import Book from "@/components/Book";
+import Head from "next/head";
+
+<Head>
+  {/* Primary Meta Tags */}
+  <title>Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching</title>
+  <meta name="title" content="Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching" />
+  <meta name="description" content="Transform your life with personalized, faith-based recovery coaching. Work one-on-one with Kelly Clark to heal from addiction, trauma, and find your purpose." />
+  <meta name="keywords" content="recovery coaching, Christian recovery, addiction support, trauma healing, faith-based coaching, Kelly Clark, LDS recovery, women in recovery, spiritual healing, transformational coaching" />
+  <meta name="author" content="Kelly Clark" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.kellyclarkcoaching.com" />
+
+  </Head>
+
+
 
 export default function Home() {
   return (

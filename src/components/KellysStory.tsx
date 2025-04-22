@@ -16,6 +16,11 @@ export default function KellysStory() {
           priority
         />
 
+    <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-[#3E2723]" style={{ fontFamily: "'Alike', serif" }}>
+      From Addiction to Faith-Based Recovery Coach Helping Women & Men Transform Their Lives
+    </h1>
+
+
         {/* Paragraphs wrap around the image */}
         <p>
           For 27 years, I struggled with addiction—drugs, alcohol, food, depression, anxiety, and deep-rooted trauma. These battles brought me to the lowest point in my life. I became homeless and lost everything, including my sense of worth and identity. I carried a broken belief that I was uniquely broken—too damaged, too different, and ultimately unworthy of being saved.
