@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section className="relative z-10 w-full px-4 sm:px-8 py-10 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200">
     <h3 className="text-2xl sm:text-3xl mb-6" style={{ fontFamily: "'Alike', serif" }}>
-    There Is Hope Ahead
+    There Is Hope Ahead | Real Change is Possible
     </h3>
 
 

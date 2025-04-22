@@ -4,32 +4,25 @@ import Image from "next/image";
 export default function KellysStory() {
   return (
     <section id="story" className="relative px-4 sm:px-8 py-12 max-w-6xl mx-auto">
-      {/* Flex Row: Image + Main Text */}
-      <div className="flex flex-col md:flex-row items-start md:gap-8">
-        {/* Image */}
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
-          <Image
-            src="/kelly-story.png"
-            alt="Kelly Clark"
-            width={400}
-            height={200}
-            className="w-full h-auto rounded"
-          />
-        </div>
+      {/* Main Content */}
+      <div className="text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
+        {/* Image with float on desktop */}
+        <Image
+          src="/kelly-story.png"
+          alt="Kelly Clark"
+          width={300}
+          height={100}
+          className="w-full md:max-w-xs h-auto rounded mb-6 md:float-left md:mr-8 md:mb-2"
+          priority
+        />
 
-        {/* Text next to image */}
-        <div className="w-full md:w-1/2 text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
-          <p>
-            For 27 years, I struggled with addiction—drugs, alcohol, food, depression, anxiety, and deep-rooted trauma. These battles brought me to the lowest point in my life. I became homeless and lost everything, including my sense of worth and identity. I carried a broken belief that I was uniquely broken—too damaged, too different, and ultimately unworthy of being saved.
-          </p>
-          <p>
-            But after hitting rock bottom, something within me shifted. In the depths of my despair, I finally turned to my loving and merciful Creator—a Higher Power I didn’t trust or even believe in before. Over the past decade, God has lovingly restored my soul.
-          </p>
-        </div>
-      </div>
-
-      {/* Full Width Section BELOW the image */}
-      <div className="mt-10 text-left text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
+        {/* Paragraphs wrap around the image */}
+        <p>
+          For 27 years, I struggled with addiction—drugs, alcohol, food, depression, anxiety, and deep-rooted trauma. These battles brought me to the lowest point in my life. I became homeless and lost everything, including my sense of worth and identity. I carried a broken belief that I was uniquely broken—too damaged, too different, and ultimately unworthy of being saved.
+        </p>
+        <p>
+          But after hitting rock bottom, something within me shifted. In the depths of my despair, I finally turned to my loving and merciful Creator—a Higher Power I didn’t trust or even believe in before. Over the past decade, God has lovingly restored my soul.
+        </p>
         <p>
           <strong>Addiction was my Goliath. And I could not have overcome it on my own.</strong>
         </p>
@@ -39,6 +32,10 @@ export default function KellysStory() {
         <p>
           These tools include spiritual practices, mindset shifts, daily accountability, and moments of surrender—small, consistent acts of faith that open the door to miracles. I now live to share these tools with others, to walk alongside them as they discover that same power for themselves.
         </p>
+      </div>
+
+      {/* Full Width Section BELOW the image */}
+      <div className="mt-10 text-left text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
         <p>
           I am a faithful member of The Church of Jesus Christ of Latter-day Saints, and I currently serve as an addiction recovery missionary alongside my husband, Weston, in the Church’s Addiction Recovery Program. It is one of the greatest honors of my life to witness lives being changed through spiritual connection, community, and Christ-centered recovery.
         </p>
@@ -49,6 +46,20 @@ export default function KellysStory() {
           <strong>Miracles are real. Change is possible. And I’m living proof.</strong>
         </p>
       </div>
+      {/* Spacer + YouTube Video */}
+<div className="mt-16 mb-12 w-full">
+  <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/UjlBTK-QJ8I"
+      title="Kelly Clark Recovery Coaching Intro"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+</div>
+
     </section>
   );
 }

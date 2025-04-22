@@ -16,9 +16,20 @@ export default function Coaching() {
             >
               What is Recovery Coaching?
             </h2>
-            <p>
-              Recovery coaching is real, personalized support from someone who’s walked through the darkness of addiction and come out the other side. It’s not about checking boxes or reciting clinical advice—it’s about being met exactly where you are, by someone who understands the chaos, the shame, the cycles, and the quiet desperation that often comes with substance use and damaging behaviors.
-            </p>
+            <div className="space-y-6">
+      <p>
+        Recovery coaching is real, personalized support from someone who’s walked through the darkness of addiction and come out the other side. It’s not about checking boxes or reciting clinical advice—it’s about being met exactly where you are, by someone who understands the chaos, the shame, the cycles, and the quiet desperation that often comes with substance use and damaging behaviors.
+      </p>
+
+      <p>
+        <strong>With over ten years of experience working one-on-one with individuals overcoming addiction as well as leading group recovery meetings</strong>, I understand that recovery isn’t one-size-fits-all. Together, we’ll create a roadmap tailored to you—one that honors your story, your pace, and your vision for the future. This is your journey, but you don’t have to do it alone.
+      </p>
+
+      <p>
+        As your recovery coach, I bring lived experience. I’ve known the weight of addiction, the pain of isolation, and the fear of change. I’ve also experienced the miracle of transformation, and I believe deeply that it’s possible for you too.
+      </p>
+    </div>
+
           </div>
         </div>
 
@@ -36,12 +47,7 @@ export default function Coaching() {
 
       {/* Full width text below image */}
       <div className="mt-10 text-left space-y-6 text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200">
-        <p>
-          <strong>With over ten years of experience working one-on-one with individuals overcoming addiction as well as leading group recovery meetings</strong>, I understand that recovery isn’t one-size-fits-all. Together, we’ll create a roadmap tailored to you—one that honors your story, your pace, and your vision for the future. This is your journey, but you don’t have to do it alone.
-        </p>
-        <p>
-          As your recovery coach, I bring lived experience. I’ve known the weight of addiction, the pain of isolation, and the fear of change. I’ve also experienced the miracle of transformation, and I believe deeply that it’s possible for you too.
-        </p>
+
         <p>
           I’ll help you recognize patterns that no longer serve you, uncover your strengths, and rebuild from a place of honesty and hope. Whether you’re just beginning to question your behaviors or you’ve already taken your first steps toward healing, coaching is a safe, judgment-free space to explore what’s next.
         </p>

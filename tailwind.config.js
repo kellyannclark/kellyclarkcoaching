@@ -12,7 +12,7 @@ module.exports = {
         softgray: "#eef1f1",
       },
       screens: {
-        'custom': '930px', // 👈 your custom breakpoint
+        'custom': '900px', // 👈 your custom breakpoint
       },
     },
   },

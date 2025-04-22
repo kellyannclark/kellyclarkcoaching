@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         {/* Kelly's Story Section with Background */}
-<div className="w-full bg-[#EEF1F1] py-10">
+<div className="w-full bg-[#F6E7D7] py-10">
   <div className="relative w-full">
     <div className="relative z-10">
 
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
 
     {/* Media + Book Section with Background */}
-<div className="w-full bg-[#EEF1F1] py-10">
+<div className="w-full bg-[#F6E7D7] py-10">
   
   {/* Media Carousel Section */}
   <div className="relative w-full py-6">
@@ -128,15 +128,7 @@ export default function Home() {
 
   {/* Book Section */}
   <div className="w-full py-6">
-    <div className="w-full px-4 mt-1 flex justify-center">
-      <Image
-        src="/header4.png"
-        alt="Header below Recovery Coaching"
-        width={200}
-        height={80}
-        className="w-auto h-auto"
-      />
-    </div>
+
 
     <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-1">
       <Book />
