@@ -76,7 +76,7 @@ export default function Coaching() {
       href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block px-6 py-3 bg-[#faf994] text-black font-semibold rounded border border-black hover:bg-[#c78568] transition"
+      className="inline-block px-6 py-3 bg-[#faf994] text-black font-semibold rounded border border-black hover:bg-white transition"
     >
       Book a Free Consultation
     </a>

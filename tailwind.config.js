@@ -11,6 +11,9 @@ module.exports = {
         kelly: "#4CBB17",
         softgray: "#eef1f1",
       },
+      screens: {
+        'custom': '930px', // 👈 your custom breakpoint
+      },
     },
   },
   plugins: [],

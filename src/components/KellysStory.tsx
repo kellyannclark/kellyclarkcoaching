@@ -11,8 +11,8 @@ export default function KellysStory() {
           <Image
             src="/kelly-story.png"
             alt="Kelly Clark"
-            width={700}
-            height={500}
+            width={400}
+            height={200}
             className="w-full h-auto rounded"
           />
         </div>
