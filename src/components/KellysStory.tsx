@@ -31,7 +31,7 @@ export default function KellysStory() {
       {/* Full Width Section BELOW the image */}
       <div className="mt-10 text-left text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
         <p>
-          Addiction was my Goliath. And I could not have overcome it on my own.
+          <strong>Addiction was my Goliath. And I could not have overcome it on my own.</strong>
         </p>
         <p>
           Along this journey, I discovered that change doesn't happen by accident. It comes through connection, using recovery tools, acts of faith, and intentional access to the power that makes true transformation possible. I've learned tools that helped me reconnect with my Higher Power—and I've created others that have become pillars of my daily recovery.
@@ -46,7 +46,7 @@ export default function KellysStory() {
           While my faith is central to who I am, I work with individuals from all walks of life and all spiritual backgrounds. Healing belongs to everyone—and my approach is grounded in love, grace, and practical tools that support lasting change, regardless of religious affiliation.
         </p>
         <p>
-          Miracles are real. Change is possible. And I’m living proof.
+          <strong>Miracles are real. Change is possible. And I’m living proof.</strong>
         </p>
       </div>
     </section>

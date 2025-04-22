@@ -37,7 +37,7 @@ export default function Coaching() {
       {/* Full width text below image */}
       <div className="mt-10 text-left space-y-6 text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200">
         <p>
-          With over ten years of experience working one-on-one with individuals overcoming addiction as well as leading group recovery meetings, I understand that recovery isn’t one-size-fits-all. Together, we’ll create a roadmap tailored to you—one that honors your story, your pace, and your vision for the future. This is your journey, but you don’t have to do it alone.
+          <strong>With over ten years of experience working one-on-one with individuals overcoming addiction as well as leading group recovery meetings</strong>, I understand that recovery isn’t one-size-fits-all. Together, we’ll create a roadmap tailored to you—one that honors your story, your pace, and your vision for the future. This is your journey, but you don’t have to do it alone.
         </p>
         <p>
           As your recovery coach, I bring lived experience. I’ve known the weight of addiction, the pain of isolation, and the fear of change. I’ve also experienced the miracle of transformation, and I believe deeply that it’s possible for you too.
@@ -68,7 +68,8 @@ export default function Coaching() {
           I offer virtual support around the world. All consultations are confidential and judgment-free.
         </p>
         <p>
-          If you're unsure where to begin, I offer a free consultation for anyone who wants to talk about their own substance use—or a loved one's. It's a safe, confidential space to ask questions, get clarity, and explore your options. There's absolutely no pressure to make a decision. Sometimes, the first step is simply having a conversation.
+          If you're unsure where to begin, I offer a free consultation for anyone who wants to talk about their own substance use—or a loved one's. It's a safe, confidential space to ask questions, get clarity, and explore your options. There's absolutely no pressure to make a decision.{" "}
+          <strong>Sometimes, the first step is simply having a conversation.</strong>
         </p>
 
         <a

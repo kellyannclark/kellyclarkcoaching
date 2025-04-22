@@ -18,7 +18,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <section className="relative z-10 py-10">
+        <section className="relative z-10">
           <Intro />
         </section>
 
