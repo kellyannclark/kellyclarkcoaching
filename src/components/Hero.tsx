@@ -7,7 +7,7 @@ export default function Hero() {
         src="/hero-image.png"
         alt="Hero image"
         width={1600}
-        height={600}
+        height={900}
         className="w-full h-auto"
         priority
       />
