@@ -10,23 +10,47 @@ import Carousel from "@/components/Carousel";
 import Book from "@/components/Book";
 import Head from "next/head";
 
-<Head>
-  {/* Primary Meta Tags */}
-  <title>Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching</title>
-  <meta name="title" content="Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching" />
-  <meta name="description" content="Transform your life with personalized, faith-based recovery coaching. Work one-on-one with Kelly Clark to heal from addiction, trauma, and find your purpose." />
-  <meta name="keywords" content="recovery coaching, Christian recovery, addiction support, trauma healing, faith-based coaching, Kelly Clark, LDS recovery, women in recovery, spiritual healing, transformational coaching" />
-  <meta name="author" content="Kelly Clark" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.kellyclarkcoaching.com" />
-
-  </Head>
-
-
 
 export default function Home() {
   return (
     <>
+          <Head>
+        {/* Primary Meta Tags */}
+        <title>Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching</title>
+        <meta name="title" content="Kelly Clark Coaching | Faith-Based Recovery & Transformational Coaching" />
+        <meta name="description" content="Transform your life with personalized, faith-based recovery coaching. Work one-on-one with Kelly Clark to heal from addiction, trauma, and find your purpose." />
+        <meta name="keywords" content="recovery coaching, Christian recovery, addiction support, trauma healing, faith-based coaching, Kelly Clark, LDS recovery, women in recovery, spiritual healing, transformational coaching" />
+        <meta name="author" content="Kelly Clark" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.kellyclarkcoaching.com" />
+
+        {/* ✅ Schema.org JSON-LD for LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Kelly Clark Coaching",
+              image: "https://www.kellyclarkcoaching.com/logo.png", // replace with your full image URL
+              url: "https://www.kellyclarkcoaching.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Spanish Fork",
+                addressRegion: "UT",
+                postalCode: "84660",
+                addressCountry: "US"
+              },
+              description:
+                "Faith-based addiction recovery coaching from Kelly Clark, serving individuals in Utah and across the U.S.",
+              sameAs: [
+                "https://www.instagram.com/YOUR_USERNAME", // optional
+                "https://www.facebook.com/YOUR_USERNAME"
+              ]
+            })
+          }}
+        />
+      </Head>
       <Nav />
       <main>
         <div className="relative z-0">

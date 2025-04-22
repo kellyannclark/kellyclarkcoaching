@@ -18,6 +18,10 @@ export default function Footer() {
       <p className="mt-2 text-[11px] max-w-md mx-auto opacity-80">
         Faith-based recovery coaching for women and families overcoming addiction, trauma, and life transitions — guided by lived experience.
       </p>
+      <p className="mt-2 text-[11px] max-w-md mx-auto opacity-80">
+      Based in Spanish Fork, Utah — offering faith-based recovery coaching locally and virtually worldwide.
+    </p>
+
     </footer>
   );
 }

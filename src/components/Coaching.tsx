@@ -85,6 +85,7 @@ export default function Coaching() {
       </div>
 
       {/* CTA section */}
+      {/* CTA section */}
       <div className="mt-10 space-y-6 text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200">
         <h2
           className="text-2xl font-semibold mb-4"
@@ -96,7 +97,7 @@ export default function Coaching() {
           I know how scary it is to admit there’s a problem. But the path forward becomes clearer with the right guide.
         </p>
         <p>
-          I offer virtual support around the world. All consultations are confidential and judgment-free.
+          <strong>Kelly Clark offers coaching to clients in Utah and across the U.S.</strong> All consultations are confidential and judgment-free.
         </p>
         <p>
           If you're unsure where to begin, I offer a free consultation for anyone who wants to talk about their own substance use—or a loved one's. It's a safe, confidential space to ask questions, get clarity, and explore your options. There's absolutely no pressure to make a decision.{" "}
@@ -112,6 +113,7 @@ export default function Coaching() {
           Book a Free Consultation
         </a>
       </div>
+
     </section>
   );
 }
