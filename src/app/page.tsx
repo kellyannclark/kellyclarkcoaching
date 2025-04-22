@@ -110,15 +110,18 @@ export default function Home() {
   {/* Media Carousel Section */}
   <div className="relative w-full py-6">
     <div className="relative z-10">
-      <div className="w-full px-4 mt-3 flex justify-center">
-        <Image
-          src="/header3.png"
-          alt="Header below Recovery Coaching"
-          width={200}
-          height={80}
-          className="w-auto h-auto"
-        />
-      </div>
+    <div className="w-full px-4 mt-3 flex justify-center">
+      <Image
+        src="/header3.png"
+        alt="Header below Recovery Coaching"
+        width={400}
+        height={160}
+        className="rounded" // optional: for style
+        priority
+      />
+    </div>
+
+
 
       <div className="mt-3">
         <Carousel />
@@ -128,6 +131,17 @@ export default function Home() {
 
   {/* Book Section */}
   <div className="w-full py-6">
+  <div className="w-full px-4 mt-3 flex justify-center">
+  <Image
+    src="/header4.png"
+    alt="Header below Recovery Coaching"
+    width={200}
+    height={160}
+    className="rounded" // optional: for style
+    priority
+  />
+</div>
+
 
 
     <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-1">

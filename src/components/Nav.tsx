@@ -51,12 +51,13 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link
-              href="#story"
-              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
-            >
-              Kelly&apos;s Story
-            </Link>
+          <Link
+        href="/contact"
+        className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
+      >
+        Speaking
+      </Link>
+
           </li>
         </ul>
 
@@ -101,9 +102,13 @@ export default function Nav() {
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium uppercase">
           <li>
-            <Link href="#story" onClick={() => setIsOpen(false)}>
-              Kelly&apos;s Story
-            </Link>
+          <Link
+            href="/contact"
+            className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
+          >
+            Speaking
+          </Link>
+
           </li>
           <li>
             <a

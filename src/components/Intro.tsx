@@ -11,11 +11,21 @@ export default function Intro() {
       <p>
         Perhaps you’ve found yourself drinking, eating, using substances, or engaging in damaging behaviors more frequently than you ever intended. Maybe the impact is subtle—your routines feel off, your relationships strained, or your peace disturbed. Or maybe it’s more severe, and life as you know it feels like it’s slipping out of control.
       </p>
-      <p className="mt-6">
+      <p className="mt-8">
         Whether you're standing at the edge, unsure how you got here, or you’ve already hit what feels like rock bottom, please know this: you are not alone.{" "}
         <strong>You don’t have to carry the weight of change by yourself.</strong>{" "}
         There is a path forward—and there is support available to walk it with you.
       </p>
+
+      <a
+        href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-6 px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white transition"
+      >
+        Book a Free Consultation
+      </a>
+
     </section>
   );
 }
