@@ -7,7 +7,7 @@ export default function Hero() {
         Kelly Clark Coaching – Faith-Based Recovery & Addiction Support for Women and Families
       </h1>
       <Image
-        src="/hero-image.png"
+        src="/hero-image.png?v=2"
         alt="Kelly Clark Coaching - Faith-Based Recovery and Addiction Support"
         width={1600}
         height={1100}
