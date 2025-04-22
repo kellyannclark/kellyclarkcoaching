@@ -14,19 +14,21 @@ const videos = [
   "https://www.youtube.com/embed/qnMCqoDCOCg",
 ];
 
-const ArrowLeft = ({ currentSlide, slideCount, ...props }: any) => (
+const ArrowLeft = ({ ...props }: any) => (
   <button
     {...props}
     className="absolute left-[-30px] top-1/2 z-10 transform -translate-y-1/2 border border-gray-300 text-black p-2 rounded-full shadow"
+    aria-label="Previous videos"
   >
     <FaChevronLeft />
   </button>
 );
 
-const ArrowRight = ({ currentSlide, slideCount, ...props }: any) => (
+const ArrowRight = ({ ...props }: any) => (
   <button
     {...props}
     className="absolute right-[-30px] top-1/2 z-10 transform -translate-y-1/2 border border-gray-300 text-black p-2 rounded-full shadow"
+    aria-label="Next videos"
   >
     <FaChevronRight />
   </button>
@@ -36,7 +38,7 @@ const Carousel = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // delay rendering of slider until mounted
+    setIsClient(true); // delay rendering until mounted
   }, []);
 
   const settings = {
@@ -47,96 +49,98 @@ const Carousel = () => {
     slidesToScroll: 1,
     arrows: true,
     autoplay: false,
-    adaptiveHeight: false,
     initialSlide: 0,
     nextArrow: <ArrowRight />,
     prevArrow: <ArrowLeft />,
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
+        settings: { slidesToShow: 2 },
       },
       {
         breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
+        settings: { slidesToShow: 1 },
       },
     ],
   };
 
   return (
-    <div id="media" className="max-w-7xl mx-auto px-4 py-8 relative">
+    <section
+      id="media"
+      className="max-w-7xl mx-auto px-4 py-12 text-gray-800 dark:text-gray-200"
+    >
+      <h2 className="text-3xl font-bold mb-8 text-center" style={{ fontFamily: "'Alike', serif" }}>
+        Media Appearances & Faith-Based Recovery Interviews
+      </h2>
+
       {isClient && (
         <Slider {...settings}>
           {videos.map((videoUrl, index) => (
             <div key={index} className="px-2">
-              <div className="aspect-video">
+              <div className="aspect-video rounded overflow-hidden shadow-md">
                 <iframe
                   className="w-full h-full"
                   src={videoUrl}
-                  title={`Video ${index + 1}`}
+                  title={`Kelly Clark Interview Video ${index + 1}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                ></iframe>
+                />
               </div>
             </div>
           ))}
         </Slider>
       )}
 
-   {/* 🎧 Featured Interview */}
-<div className="mt-10 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
-  <img
-    src="/leadingsaints.png"
-    alt="Leading Saints Logo"
-    className="h-12 w-auto"
-  />
-  <div>
-    <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
-      Leading Saints: Addiction Was My Vehicle to the Savior
-    </h3>
-    <p className="text-gray-700 mb-3">
-      An interview with Kelly Clark and Heather Warren on Leading Saints. In
-      this conversation, they share their powerful journey through addiction
-      and into faith, healing, and recovery.
-    </p>
-    <a
-      href="https://leadingsaints.org/addiction-was-my-vehicle-to-the-savior-an-interview-with-kelly-clark-and-heather-warren/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
-    >
-      Listen on Leading Saints →
-    </a>
-  </div>
-</div>
+      {/* 🎧 Featured Interview */}
+      <div className="mt-12 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
+        <img
+          src="/leadingsaints.png"
+          alt="Leading Saints Logo"
+          className="h-12 w-auto"
+        />
+        <div>
+          <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
+            Leading Saints: Addiction Was My Vehicle to the Savior
+          </h3>
+          <p className="text-gray-700 mb-3">
+            Kelly Clark and Heather Warren share their testimony and recovery journey on the Leading Saints podcast, emphasizing the power of faith, surrender, and Christ-centered healing.
+          </p>
+          <a
+            href="https://leadingsaints.org/addiction-was-my-vehicle-to-the-savior-an-interview-with-kelly-clark-and-heather-warren/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
+          >
+            Listen on Leading Saints →
+          </a>
+        </div>
+      </div>
 
-{/* 📺 BYUtv Segment */}
-<div className="mt-6 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
-  <img src="/byutv.png" alt="BYUtv Logo" className="h-12 w-auto" />
-  <div>
-    <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
-      BYUtv Special Feature
-    </h3>
-    <p className="text-gray-700 mb-3">
-      Watch Kelly Clark featured in this powerful segment on BYUtv,
-      highlighting the journey of recovery and faith.
-    </p>
-    <a
-      href="https://www.byutv.org/8022092d-52e4-4958-993b-116981f6448c?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Extra"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
-    >
-      Watch on BYUtv →
-    </a>
-  </div>
-</div>
-
-    </div>
+      {/* 📺 BYUtv Segment */}
+      <div className="mt-6 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
+        <img
+          src="/byutv.png"
+          alt="BYUtv Logo"
+          className="h-12 w-auto"
+        />
+        <div>
+          <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
+            BYUtv Feature: The Power of Redemption
+          </h3>
+          <p className="text-gray-700 mb-3">
+            A powerful documentary segment featuring Kelly Clark’s recovery story and her path from addiction to spiritual leadership and purpose.
+          </p>
+          <a
+            href="https://www.byutv.org/8022092d-52e4-4958-993b-116981f6448c?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Extra"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
+          >
+            Watch on BYUtv →
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 

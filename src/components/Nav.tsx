@@ -7,10 +7,14 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#3E2723] text-[#F6E7D7] px-5 py-4 w-full shadow-md">
+    <nav
+      role="navigation"
+      aria-label="Main site navigation"
+      className="bg-[#3E2723] text-[#F6E7D7] px-5 py-4 w-full shadow-md"
+    >
       <div className="max-w-6xl mx-auto flex items-center justify-between relative">
-        {/* Logo on the left */}
-        <Link href="/" className="shrink-0">
+        {/* Logo */}
+        <Link href="/" className="shrink-0" aria-label="Home">
           <Image
             src="/logo.png"
             alt="Kelly Clark Coaching Logo"
@@ -21,7 +25,7 @@ export default function Nav() {
           />
         </Link>
 
-        {/* Desktop Nav Centered */}
+        {/* Desktop Nav */}
         <ul className="hidden md:flex gap-9 custom:gap-6 text-[12px] custom:text-xs md:text-lg font-condensed font-bold uppercase absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
           <li>
             <a
@@ -34,14 +38,14 @@ export default function Nav() {
               Free Consult
             </a>
           </li>
-
-          <Link
-            href="#coaching"
-            className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
-          >
-            Services
-          </Link>
-
+          <li>
+            <Link
+              href="#coaching"
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
+            >
+              Services
+            </Link>
+          </li>
           <li>
             <Link
               href="#media"
@@ -51,17 +55,16 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-          <Link
-        href="/contact"
-        className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
-      >
-        Speaking
-      </Link>
-
+            <Link
+              href="/contact"
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
+            >
+              Speaking
+            </Link>
           </li>
         </ul>
 
-        {/* Contact Me Button (Right side) */}
+        {/* Contact Me CTA */}
         <div className="hidden md:block ml-auto">
           <Link
             href="/contact"
@@ -71,11 +74,11 @@ export default function Nav() {
           </Link>
         </div>
 
-        {/* Hamburger Icon aligned right */}
+        {/* Hamburger Icon */}
         <button
           className="md:hidden text-[#F6E7D7] ml-auto"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation menu"
         >
           <svg
             className="w-6 h-6"
@@ -102,13 +105,13 @@ export default function Nav() {
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 mt-4 px-2 text-sm font-medium uppercase">
           <li>
-          <Link
-            href="/contact"
-            className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
-          >
-            Speaking
-          </Link>
-
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
+            >
+              Speaking
+            </Link>
           </li>
           <li>
             <a
@@ -122,12 +125,20 @@ export default function Nav() {
             </a>
           </li>
           <li>
-            <Link href="#coaching" onClick={() => setIsOpen(false)}>
+            <Link
+              href="#coaching"
+              onClick={() => setIsOpen(false)}
+              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link href="#media" onClick={() => setIsOpen(false)}>
+            <Link
+              href="#media"
+              onClick={() => setIsOpen(false)}
+              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+            >
               Media / Book
             </Link>
           </li>
@@ -135,7 +146,7 @@ export default function Nav() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="bg-white text-black px-4 py-2 rounded font-bold shadow hover:bg-gray-200 transition"
+              className="bg-[#F6E7D7] text-black px-4 py-2 rounded font-bold shadow hover:bg-gray-200 transition"
             >
               Contact Me
             </Link>
