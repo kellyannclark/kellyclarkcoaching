@@ -73,13 +73,14 @@ export default function Coaching() {
         </p>
 
         <a
-          href="https://calendly.com/event_types/user/me"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-[#6d9ebd] text-black font-semibold rounded hover:bg-[#c78568] transition"
-        >
-          Book a Free Consultation
-        </a>
+      href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-6 py-3 bg-[#faf994] text-black font-semibold rounded border border-black hover:bg-[#c78568] transition"
+    >
+      Book a Free Consultation
+    </a>
+
       </div>
     </section>
   );

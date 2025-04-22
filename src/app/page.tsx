@@ -120,7 +120,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-6">
+      <div className="mt-3">
         <Carousel />
       </div>
     </div>
@@ -128,7 +128,7 @@ export default function Home() {
 
   {/* Book Section */}
   <div className="w-full py-6">
-    <div className="w-full px-4 mt-10 flex justify-center">
+    <div className="w-full px-4 mt-1 flex justify-center">
       <Image
         src="/header4.png"
         alt="Header below Recovery Coaching"
@@ -138,7 +138,7 @@ export default function Home() {
       />
     </div>
 
-    <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-6">
+    <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-1">
       <Book />
     </div>
   </div>

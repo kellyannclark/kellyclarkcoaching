@@ -40,18 +40,13 @@ const Book = () => {
             Christ can heal in the most unlikely of places.
           </p>
 
-          <blockquote className="italic border-l-4 border-gray-400 pl-4 text-gray-600 dark:text-gray-400">
-            “I used to believe I was uniquely broken — beyond repair, beyond
-            redemption. But I’ve come to know a Savior who specializes in
-            impossible stories.”
-          </blockquote>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <a
           href="https://www.amazon.com/Between-Monsters-Mercy-Inspiring-Story/dp/1462136966/ref=sr_1_1?crid=1UAPRC0URZRVN..."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-black text-white font-semibold rounded hover:bg-gray-800 transition"
+          className="inline-block px-6 py-3 bg-[#FF9900] text-white font-semibold rounded hover:bg-gray-800 transition"
         >
           Buy on Amazon
         </a>
@@ -69,7 +64,7 @@ const Book = () => {
           href="https://www.audible.com/pd/Between-Monsters-and-Mercy-Audiobook/B08FRKS1Q9"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-black text-white font-semibold rounded hover:bg-gray-800 transition"
+          className="inline-block px-6 py-3 bg-[#4d7aef] text-white font-semibold rounded hover:bg-gray-800 transition"
         >
           Listen on Audible
         </a>
