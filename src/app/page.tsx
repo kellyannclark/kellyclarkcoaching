@@ -47,7 +47,7 @@ export default function Home() {
             src="/header1.png"
             alt="Header below message"
             width={200}
-            height={150}
+            height={80}
             className="w-auto h-auto"
           />
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
               src="/header2.png"
               alt="Header below Kelly's Story"
               width={200}
-              height={150}
+              height={80}
               className="w-auto h-auto"
             />
           </div>
@@ -104,41 +104,47 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Media Carousel Section */}
-        <div className="relative w-full py-6">
-          <div className="relative z-10">
-            <div className="w-full px-4 mt-3 flex justify-center">
-              <Image
-                src="/header3.png"
-                alt="Header below Recovery Coaching"
-                width={200}
-                height={150}
-                className="w-auto h-auto"
-              />
-            </div>
+    {/* Media + Book Section with Background */}
+<div className="w-full bg-[#EEF1F1] py-10">
+  
+  {/* Media Carousel Section */}
+  <div className="relative w-full py-6">
+    <div className="relative z-10">
+      <div className="w-full px-4 mt-3 flex justify-center">
+        <Image
+          src="/header3.png"
+          alt="Header below Recovery Coaching"
+          width={200}
+          height={80}
+          className="w-auto h-auto"
+        />
+      </div>
 
-            <div className="mt-6">
-              <Carousel />
-            </div>
-          </div>
-        </div>
+      <div className="mt-6">
+        <Carousel />
+      </div>
+    </div>
+  </div>
 
-        {/* Book Section */}
-        <div className="w-full py-6">
-          <div className="w-full px-4 mt-10 flex justify-center">
-            <Image
-              src="/header4.png"
-              alt="Header below Recovery Coaching"
-              width={200}
-              height={150}
-              className="w-auto h-auto"
-            />
-          </div>
+  {/* Book Section */}
+  <div className="w-full py-6">
+    <div className="w-full px-4 mt-10 flex justify-center">
+      <Image
+        src="/header4.png"
+        alt="Header below Recovery Coaching"
+        width={200}
+        height={80}
+        className="w-auto h-auto"
+      />
+    </div>
 
-          <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-6">
-            <Book />
-          </div>
-        </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-6">
+      <Book />
+    </div>
+  </div>
+
+</div>
+
       </main>
       <Footer />
     </>

@@ -10,20 +10,20 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between relative">
         {/* Desktop Nav Centered */}
         <ul className="hidden sm:flex gap-4 sm:gap-6 text-[10px] sm:text-xs md:text-sm font-condensed font-bold uppercase absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
-          <li>
-          <a
-              href="https://calendly.com/event_types/user/me"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-kelly transition duration-200 ease-in-out"
-            >
-              Free Consult
-            </a>
-
-          </li>
+        <li>
+      <a
+        href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setIsOpen(false)}
+        className="text-white hover:text-kelly transition duration-200 ease-in-out"
+      >
+        Free Consult
+      </a>
+    </li>
           <li>
           <Link
-          href="#consult"
+          href="#coaching"
           className="text-white hover:text-kelly transition duration-200 ease-in-out"
         >
           Services
@@ -88,14 +88,21 @@ export default function Nav() {
       </Link>
     </li>
     <li>
-      <Link href="#consult" onClick={() => setIsOpen(false)}>
+      <a
+        href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setIsOpen(false)}
+        className="text-white hover:text-kelly transition duration-200 ease-in-out"
+      >
         Free Consult
-      </Link>
+      </a>
     </li>
+
     <li>
-      <Link href="#services" onClick={() => setIsOpen(false)}>
-        Services
-      </Link>
+        <Link href="#coaching" onClick={() => setIsOpen(false)}>
+      Services
+    </Link>
     </li>
     <li>
       <Link href="#media" onClick={() => setIsOpen(false)}>

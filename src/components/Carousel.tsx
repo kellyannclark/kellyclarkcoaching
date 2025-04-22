@@ -87,54 +87,55 @@ const Carousel = () => {
         </Slider>
       )}
 
-      {/* 🎧 Featured Interview */}
-      <div className="mt-10 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
-        <img
-          src="/leadingsaints.png"
-          alt="Leading Saints Logo"
-          className="h-12 w-auto"
-        />
-        <div>
-          <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
-            Leading Saints: Addiction Was My Vehicle to the Savior
-          </h3>
-          <p className="text-gray-700 mb-3">
-            An interview with Kelly Clark and Heather Warren on Leading Saints. In
-            this conversation, they share their powerful journey through addiction
-            and into faith, healing, and recovery.
-          </p>
-          <a
-            href="https://leadingsaints.org/addiction-was-my-vehicle-to-the-savior-an-interview-with-kelly-clark-and-heather-warren/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
-          >
-            Listen on Leading Saints →
-          </a>
-        </div>
-      </div>
+   {/* 🎧 Featured Interview */}
+<div className="mt-10 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
+  <img
+    src="/leadingsaints.png"
+    alt="Leading Saints Logo"
+    className="h-12 w-auto"
+  />
+  <div>
+    <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
+      Leading Saints: Addiction Was My Vehicle to the Savior
+    </h3>
+    <p className="text-gray-700 mb-3">
+      An interview with Kelly Clark and Heather Warren on Leading Saints. In
+      this conversation, they share their powerful journey through addiction
+      and into faith, healing, and recovery.
+    </p>
+    <a
+      href="https://leadingsaints.org/addiction-was-my-vehicle-to-the-savior-an-interview-with-kelly-clark-and-heather-warren/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
+    >
+      Listen on Leading Saints →
+    </a>
+  </div>
+</div>
 
-      {/* 📺 BYUtv Segment */}
-      <div className="mt-6 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4">
-        <img src="/byutv.png" alt="BYUtv Logo" className="h-12 w-auto" />
-        <div>
-          <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
-            BYUtv Special Feature
-          </h3>
-          <p className="text-gray-700 mb-3">
-            Watch Kelly Clark featured in this powerful segment on BYUtv,
-            highlighting the journey of recovery and faith.
-          </p>
-          <a
-            href="https://www.byutv.org/8022092d-52e4-4958-993b-116981f6448c?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Extra"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
-          >
-            Watch on BYUtv →
-          </a>
-        </div>
-      </div>
+{/* 📺 BYUtv Segment */}
+<div className="mt-6 rounded shadow-md p-6 flex flex-col sm:flex-row items-center gap-4 bg-white">
+  <img src="/byutv.png" alt="BYUtv Logo" className="h-12 w-auto" />
+  <div>
+    <h3 className="text-xl font-semibold mb-1" style={{ fontFamily: "'Alike', serif" }}>
+      BYUtv Special Feature
+    </h3>
+    <p className="text-gray-700 mb-3">
+      Watch Kelly Clark featured in this powerful segment on BYUtv,
+      highlighting the journey of recovery and faith.
+    </p>
+    <a
+      href="https://www.byutv.org/8022092d-52e4-4958-993b-116981f6448c?utm_source=byub&utm_medium=share&utm_campaign=share_2025&utm_content=Extra"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block text-black font-semibold px-5 py-2 rounded transition underline"
+    >
+      Watch on BYUtv →
+    </a>
+  </div>
+</div>
+
     </div>
   );
 };
