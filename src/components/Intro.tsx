@@ -6,18 +6,31 @@ export default function Intro() {
     className="relative z-10 w-full px-4 sm:px-8 py-10 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed"
     style={{ color: "#3E2723" }}
   >
-    <h1 className="text-3xl sm:text-4xl mb-4 font-bold" style={{ fontFamily: "'Alike', serif" }}>
-      Substance Use & Addiction Recovery Coaching with Faith and Purpose
-    </h1>
-  
-    <p>
-      Perhaps you’ve found yourself drinking, eating, using substances, or engaging in damaging behaviors more frequently than you ever intended. Maybe the impact is subtle—your routines feel off, your relationships strained, or your peace disturbed. Or maybe it’s more severe, and life as you know it feels like it’s slipping out of control.
-    </p>
-    <p className="mt-8">
-      Whether you're standing at the edge, unsure how you got here, or you’ve already hit what feels like rock bottom, please know this: you are not alone.{" "}
-      <strong>You don’t have to carry the weight of change by yourself.</strong>{" "}
-      There is a path forward—and there is support available to walk it with you.
-    </p>
+<h1
+  className="text-3xl sm:text-4xl mb-4 font-bold"
+  style={{ fontFamily: "'Alike', serif" }}
+>
+  Substance Use & Addiction Recovery Coaching with Faith and Purpose
+</h1>
+
+<p>
+  Perhaps you’ve found yourself drinking, eating, using substances, or engaging in damaging behaviors more frequently than you ever intended. Maybe the impact is subtle—your routines feel off, your relationships strained, or your peace disturbed. Or maybe it’s more severe, and life as you know it feels like it’s slipping out of control.
+</p>
+
+<p className="mt-6">
+  I also work with loved ones—spouses, parents, siblings, or friends—who are navigating the heartbreak and confusion that often comes with watching someone struggle in addiction. If you’re walking beside someone you care about and don’t know how to help, you’re not alone. You deserve support too.
+</p>
+
+<p className="mt-6">
+  And for those who may not struggle with addiction themselves but feel spiritually disconnected, I offer coaching to help you strengthen your faith, reconnect with God, and live with greater intention, grace, and hope.
+</p>
+
+<p className="mt-8">
+  Whether you're standing at the edge, unsure how you got here, or you’ve already hit what feels like rock bottom, please know this: you are not alone.{" "}
+  <strong>You don’t have to carry the weight of change by yourself.</strong>{" "}
+  There is a path forward—and there is support available to walk it with you.
+</p>
+
   
     {/* Stacked buttons */}
     <div className="flex flex-col items-start space-y-4 mt-6">
