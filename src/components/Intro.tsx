@@ -24,6 +24,15 @@ export default function Intro() {
       >
         Book a Free Consultation
       </a>
+      <a
+        href="https://calendly.com/mrs-kellyannclark/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white transition ml-4"
+      >
+        Schedule Coaching Session
+      </a>
+
 
     </section>
   );
