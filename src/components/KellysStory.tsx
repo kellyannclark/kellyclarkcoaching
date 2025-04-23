@@ -5,6 +5,9 @@ export default function KellysStory() {
   return (
     <section id="story" className="relative px-4 sm:px-8 py-12 max-w-6xl mx-auto">
       {/* Main Content */}
+      <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-[#3E2723]" style={{ fontFamily: "'Alike', serif" }}>
+      Kelly’s Story: From Addiction to Purpose
+    </h1>
       <div className="text-sm sm:text-base leading-relaxed text-gray-800 dark:text-gray-200 space-y-6">
         {/* Image with float on desktop */}
         <Image

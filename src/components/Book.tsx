@@ -7,8 +7,11 @@ export default function Book() {
     <section
       id="book"
       className="py-12 px-4 md:px-8 text-gray-800 dark:text-gray-200"
+
+      
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8">
+
 
         {/* Book Cover */}
         <div className="w-full md:w-1/3">
@@ -21,12 +24,13 @@ export default function Book() {
 
         {/* Book Description */}
         <article className="w-full md:w-2/3 space-y-5">
-          <h1
-            className="text-3xl font-semibold"
-            style={{ fontFamily: "'Alike', serif" }}
-          >
-            Between Monsters and Mercy
-          </h1>
+        <h1
+        className="text-3xl font-semibold"
+        style={{ fontFamily: "'Alike', serif" }}
+      >
+        Kelly's Book: <em>Between Monsters and Mercy</em>
+      </h1>
+
 
           <h2 className="text-xl font-semibold">
             A true story of faith, addiction, redemption, and recovery

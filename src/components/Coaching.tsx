@@ -7,6 +7,7 @@ export default function Coaching() {
   return (
     <section id="coaching" className="px-4 sm:px-8 py-12 max-w-6xl mx-auto">
       {/* Page Title */}
+
       <h1
         className="text-3xl sm:text-4xl font-bold mb-10 text-[#3E2723]"
         style={{ fontFamily: "'Alike', serif" }}
@@ -129,24 +130,25 @@ export default function Coaching() {
         </p>
 
         {/* Buttons */}
-        <div className="flex items-center space-x-4 mt-6">
-          <a
-            href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white transition"
-          >
-            Book a Free Consultation
-          </a>
-          <a
-            href="https://calendly.com/mrs-kellyannclark/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white transition"
-          >
-            Schedule Coaching Session
-          </a>
-        </div>
+        <div className="flex flex-col items-start space-y-4 mt-6">
+        <a
+          href="https://calendly.com/mrs-kellyannclark/20-min-free-consultation-with-kelly-clark"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white hover:text-black transition"
+        >
+          Book a Free Consultation
+        </a>
+        <a
+          href="https://calendly.com/mrs-kellyannclark/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-[#5d7466] text-white font-semibold rounded border border-black hover:bg-white hover:text-black transition"
+        >
+          Schedule Coaching Session
+        </a>
+      </div>
+
       </div>
     </section>
   );

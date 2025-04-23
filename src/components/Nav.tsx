@@ -119,7 +119,7 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
             >
               Free Consult
             </a>
@@ -128,7 +128,7 @@ export default function Nav() {
             <Link
               href="#coaching"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
             >
               Services
             </Link>
@@ -137,7 +137,7 @@ export default function Nav() {
             <Link
               href="#media"
               onClick={() => setIsOpen(false)}
-              className="text-white hover:text-kelly transition duration-200 ease-in-out"
+              className="text-[#F6E7D7] hover:text-kelly transition duration-200 ease-in-out"
             >
               Media / Book
             </Link>

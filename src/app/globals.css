@@ -6,7 +6,7 @@
 /* Root theme */
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #3E2723; 
   --kelly: #4CBB17;
   --color-gray-800: #000000; /* Fully black text */
 }

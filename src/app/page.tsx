@@ -80,16 +80,6 @@ export default function Home() {
     <div className="relative z-10">
 
       <div className="mt-1">
-        {/* Top Header Image */}
-        <div className="w-full px-4 mt-1 flex justify-center">
-          <Image
-            src="/header1.png"
-            alt="Header below message"
-            width={200}
-            height={80}
-            className="w-auto h-auto"
-          />
-        </div>
 
         {/* Kelly's Story */}
         <KellysStory />
@@ -115,15 +105,6 @@ export default function Home() {
 
         {/* Coaching Section */}
         <div className="w-full py-6">
-          <div className="w-full px-4 mt-3 flex justify-center">
-            <Image
-              src="/header2.png"
-              alt="Header below Kelly's Story"
-              width={200}
-              height={80}
-              className="w-auto h-auto"
-            />
-          </div>
 
           <div className="max-w-6xl mx-auto px-4 sm:px-8">
             <Coaching />
@@ -141,7 +122,10 @@ export default function Home() {
               />
             </div>
           </div>
+      
         </div>
+
+        
 
     {/* Media + Book Section with Background */}
 <div className="w-full bg-[#F6E7D7] py-10">
@@ -149,18 +133,6 @@ export default function Home() {
   {/* Media Carousel Section */}
   <div className="relative w-full py-6">
     <div className="relative z-10">
-    <div className="w-full px-4 mt-3 flex justify-center">
-      <Image
-        src="/header3.png"
-        alt="Header below Recovery Coaching"
-        width={400}
-        height={160}
-        className="rounded" // optional: for style
-        priority
-      />
-    </div>
-
-
 
       <div className="mt-3">
         <Carousel />
@@ -170,17 +142,6 @@ export default function Home() {
 
   {/* Book Section */}
   <div className="w-full py-6">
-  <div className="w-full px-4 mt-3 flex justify-center">
-  <Image
-    src="/header4.png"
-    alt="Header below Recovery Coaching"
-    width={200}
-    height={160}
-    className="rounded" // optional: for style
-    priority
-  />
-</div>
-
 
 
     <div className="max-w-6xl mx-auto px-4 sm:px-8 mt-1">
